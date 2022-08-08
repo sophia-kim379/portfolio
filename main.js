@@ -63,7 +63,14 @@ workBtnContainer.addEventListener('click', (e) => {
       projectContainer.classList.remove('anim-out');
     }, 300);
   });
-  
+
+
+// Project description detail
+// const projectItem = document.querySelector(".project");
+// projectItem.addEventListener("click", (e)=> {
+//   console.log(e.target)
+// })
+
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
@@ -76,3 +83,5 @@ function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
   }
+
+

@@ -27,6 +27,7 @@
       <li class="navbar__menu__item" data-link="#work">Work experience</li>
       <li class="navbar__menu__item" data-link="#Experience">Education&Experience</li>
       <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#Portfolio">Personal Portfolio</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
     <!-- Toggle button -->
@@ -37,13 +38,13 @@
   </nav>
   <!-- Home -->
   <section id="home">
+    
     <div class="home__container">
       <img src="imgs/profile.png" alt="Amie's profile photo" class="home__avatar">
       <h1 class="home__title">안녕하세요. <br /> 저는 김효정입니다.</h1>
       <button class="home__contact">Contact Me</button>
     </div>
   </section>
-  <!-- About -->
   <!-- About -->
   <section id="about" class="section section__container">
     <h1>About me</h1>
@@ -76,6 +77,7 @@
           </tbody>
         </table>
       </div>
+      
       <div class="about__majors">
         <div class="major">
           <div class="major__description">
@@ -143,6 +145,99 @@
         </div>
       </div>
       </div>
+  </section>
+  <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          스킬설명
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git GUI - FORK</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+  <!-- Portfolio -->
+  <section id="Portfolio" class="section">
+    <h1>Personal Portfolio</h1>
+    <div class="job">
+      <table>
+        <tbody>
+          <tr>
+            <th rowspan="2">
+              산책 이야기
+            </th>
+            <td><a href="https://github.com/amiekim/go-for-a-walk">* 깃허브 리드미</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://go-for-a-walk.netlify.app/">* netlify사용 웹사이트</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
   <!-- Education & Experience -->
     <section id="Experience" class="section section__container">
@@ -240,83 +335,10 @@
         </table>
       </div>
     </section>
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="section__container">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        스킬설명
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JavaScript</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>React</span>
-              <span>60%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 60%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>NodeJS</span>
-              <span>30%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-            </ul>
-          </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git GUI - FORK</span></li>
-            </ul>
-          </div>
-        </div>
-    </div>
-    </div>
-  </section>
+
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section about__jobs">
       <h1 class="contact__title">Contact</h1>
       <h2 class="contact__email">amie0kim@gmail.com</h2>
       <p class="contact__rights">

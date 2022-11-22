@@ -360,10 +360,7 @@ h1 {
   }
 
 /* Skill */
-#skills {
-    background-color: var(--color-light-green);
-  }
-  
+
   .skillset {
     display: flex;
     background-color: var(--color-light-grey);
@@ -410,6 +407,15 @@ h1 {
   .tools,
   .etc {
     padding: 20px;
+  }
+
+  /* portfolio */
+  #Portfolio {
+    background-color: var(--color-light-green);
+
+  }
+  #Portfolio a {
+  color: var(--color-grey);
   }
 
   /* For below 768px screen width */

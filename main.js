@@ -20,7 +20,7 @@ navbarMenu.addEventListener("click", (e) => {
     if (!link) return;
     navbarMenu.classList.remove("open");
     scrollIntoView(link);
-    history.replaceState({data: 'pushState1'}, '', `/${link}`)
+    history.replaceState({data: 'pushState1'}, '', `./${link}`)
 })
 
 // Handle click on "contact me" button on home

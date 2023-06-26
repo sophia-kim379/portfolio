@@ -49,7 +49,7 @@
   <section id="about" class="section section__container">
     <h1>About me</h1>
     <p style="text-align: left;">
-      개발자로 전직하기 전 약 5년 정도 인사 회계 재고관리 일을 했고 개발자로 직종을 변경하여
+      개발자로 전직하기 전 인사 회계 재고관리 일을 했고 개발자로 직종을 변경하여
       1년차 프론트엔드 웹 개발자로 SI팀에서 웹 서비스를 개발하는 일을 하였습니다.
       <br>
       주로 디자인팀에서 받은 Zeplin 툴을 통해 HTML, CSS를 구성하고 백엔드 팀과 협업하여 ReactJS와 gatsy Javascript로 기능 구현을 하였습니다. 디자인이 중요하지 않은 관리자 페이지는 기획서에 나와있는 레이아웃에 맞춰 Bootstrap을 이용하여 개발하였습니다. 형상관리는 github를 Fork를 통해 사용했습니다.
@@ -65,12 +65,34 @@
         <table>
           <tbody>
             <tr>
-              <th><img src="imgs/jobs/logo-frigatebird.png" class="job__logo"></th>
+              <th>
+                <p style="text-align: left;">
+                Lillo<br/>
+                <span style="color:rgb(255, 72, 0)">Corporation</span>
+                </p>
+              </th>
+              <td>
+                <div class="job__description">
+                  <p class="job__period">2022.12 ~ 재직중</p>
+                  <p class="job__name">
+                    Lillo서비스팀/팀원
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <div style="text-align: left;">
+                  <p>FRI<span style="color:rgb(255, 72, 0)">:<br/>
+                  GATE<br/>
+                  </span>BIRD</p>
+                </div>
+              </th>
               <td>
                 <div class="job__description">
                   <p class="job__period">2021.03 ~ 2022.06</p>
                   <p class="job__name">
-                    SI팀/사원
+                    SI팀/팀원
                   </p>
                 </div>
               </td>
@@ -101,16 +123,48 @@
         <h2>Projects</h2>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">4</span>
+            All <span class="category__count">6</span>
           </button>
           <button class="category__btn" data-filter="front-end-project">
-            Front end <span class="category__count">3</span>
+            Front end <span class="category__count">5</span>
           </button>
           <button class="category__btn" data-filter="back-end-project">
             Back end <span class="category__count">1</span>
           </button>
         </div>
         <div class="work__projects">
+          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+            <img src="" alt="" class="project__img">
+            <div class="project__description">
+              <h3>런칭전 공개 불가</h3>
+              <span>릴로코퍼레이션 자사서비스</span>
+              <span>ReactJS,NextJS,JavaScript,typescript</span>
+            </div>
+          </a>
+          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+            <img src="" alt="" class="project__img">
+            <div class="project__description">
+              <h3>런칭전 공개 불가</h3>
+              <span>SI - 1차개발 참여</span>
+              <span>ReactJS, swiperJS,react-youtube 등 다수 라이브러리 활용</span>
+            </div>
+          </a>
+          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+            <img src="imgs/projects/lillo-play.png" alt="" class="project__img">
+            <div class="project__description">
+              <h3>릴로 플레이 - 자사서비스 소개페이지</h3>
+              <span>데이터바인딩작업(퍼블리싱 파일 리액트 적용)</span>
+              <span>ReactJS</span>
+            </div>
+          </a>
+          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+            <img src="imgs/projects/kbds.png" alt="" class="project__img">
+            <div class="project__description">
+              <h3>kbds - people 페이지</h3>
+              <span>SI - 유지보수</span>
+              <span>ReactJS</span>
+            </div>
+          </a>
           <a href="https://청약365.com" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
             <img src="imgs/projects/cheongyak365.png" alt="" class="project__img">
             <div class="project__description">
@@ -179,19 +233,19 @@
             <div class="skill">
               <div class="skill__description">
                 <span>JavaScript</span>
-                <span>70%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
+                <div class="skill__value" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>React</span>
-                <span>60%</span>
+                <span>ReactJS</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 60%;"></div>
+                <div class="skill__value" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
@@ -201,6 +255,15 @@
               </div>
               <div class="skill__bar">
                 <div class="skill__value" style="width: 30%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Axios</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
               </div>
             </div>
           </div>
@@ -214,7 +277,10 @@
             <div class="etc">
               <h3 class="skillset__title">Etc</h3>
               <ul class="etc__list">
-                <li><span>Git GUI - FORK</span></li>
+                <li><span>Git : CLI, GUI - FORK</span></li>
+                <li><span>Typescript</span></li>
+                <li><span>ReactJS + NextJS</span></li>
+                <li><span>Styled Component</span></li>
               </ul>
             </div>
           </div>
@@ -259,7 +325,7 @@
                 <br>JAVA, PYTHON, RPA, ORACLE 등 교육
               </td>
             </tr>
-            <tr>
+            <!-- <tr>
               <th>
                 <img src="imgs/jobs/bioden.jpg" class="experience__logo">
               </th>
@@ -270,7 +336,7 @@
                 <br>
                 경영관리 / 계약직
               </td>
-            </tr>
+            </tr> -->
             <tr>
               <th>
                 <img src="imgs/jobs/twoisys.jpg" class="experience__logo">

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amie's Portfolio</title>
-  <meta name="description" content="Portfolio for Amie"/>
-  <meta name="author" content="Amie"/>
+  <meta name="description" content="Portfolio for Amie" />
+  <meta name="author" content="Amie" />
   <link rel="icon" type="image/png" href="imgs/favicon.png" />
   <script src="https://kit.fontawesome.com/14ddd7fabf.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav id="navbar">
@@ -34,11 +36,11 @@
     <button class="navbar__toggle-btn">
       <i class="fa-solid fa-bars"></i>
     </button>
-    </nav>
+  </nav>
   </nav>
   <!-- Home -->
   <section id="home">
-    
+
     <div class="home__container">
       <img src="imgs/profile.png" alt="Amie's profile photo" class="home__avatar">
       <h1 class="home__title">안녕하세요. <br /> 저는 김효정입니다.</h1>
@@ -50,15 +52,18 @@
     <h1>About me</h1>
     <p style="text-align: left;">
       개발자로 전직하기 전 인사 회계 재고관리 일을 했고 개발자로 직종을 변경하여
-      1년차 프론트엔드 웹 개발자로 SI팀에서 웹 서비스를 개발하는 일을 하였습니다.
-      <br>
-      주로 디자인팀에서 받은 Zeplin 툴을 통해 HTML, CSS를 구성하고 백엔드 팀과 협업하여 ReactJS와 gatsy Javascript로 기능 구현을 하였습니다. 디자인이 중요하지 않은 관리자 페이지는 기획서에 나와있는 레이아웃에 맞춰 Bootstrap을 이용하여 개발하였습니다. 형상관리는 github를 Fork를 통해 사용했습니다.
-      <br>
-      경영관리 업무는 직원들과 소통이 필수였습니다. 예전 경험을 살려 프론트엔드 개발자로서 백엔드, 디자이너, PM팀과 적극적으로 문제, 해결방안을 공유했고 차후 발생할 수 있는 에러, 예외 그리고 일정을 고민하여 더 좋은 효율을 낼 수 있도록 개선하였습니다.
+      약 2년정도 프론트엔드 웹 개발자로 웹 서비스를 개발하는 일을 하였습니다.
+      <br />
+      주로 디자인팀에서 받은 Zeplin,figma 툴을 통해 HTML, CSS를 구성하고 백엔드 팀과 협업하여 ReactJS와 Javascript로 기능 구현을 하였습니다.
+      <br />
+      관리자 페이지는 기획서에 나와있는 레이아웃에 맞춰 Bootstrap을 이용하여 개발하였습니다.<br />
+      형상관리는 github를 이용했고 GUI(FORK) 혹은 CLI를 이용했습니다.
+      경영관리 업무는 직원들과 소통이 필수였습니다. 예전 경험을 살려 프론트엔드 개발자로서 백엔드, 디자이너, PM팀과 적극적으로 문제, 해결방안을 공유했고 차후 발생할 수 있는 에러, 예외 그리고 일정을
+      고민하여 더 좋은 효율을 낼 수 있도록 개선하였습니다.
     </p>
   </section>
   <!-- Work experience -->
-    <section id="work" class="section about__jobs">
+  <section id="work" class="section about__jobs">
     <div>
       <h1>work experience</h1>
       <div class="job">
@@ -67,13 +72,13 @@
             <tr>
               <th>
                 <p style="text-align: left;">
-                Lillo<br/>
-                <span style="color:rgb(255, 72, 0)">Corporation</span>
+                  Lillo<br />
+                  <span style="color:rgb(255, 72, 0)">Corporation</span>
                 </p>
               </th>
               <td>
                 <div class="job__description">
-                  <p class="job__period">2022.12 ~ 재직중</p>
+                  <p class="job__period">2022.12 ~ 2023.7</p>
                   <p class="job__name">
                     Lillo서비스팀/팀원
                   </p>
@@ -83,9 +88,9 @@
             <tr>
               <th>
                 <div style="text-align: left;">
-                  <p>FRI<span style="color:rgb(255, 72, 0)">:<br/>
-                  GATE<br/>
-                  </span>BIRD</p>
+                  <p>FRI<span style="color:rgb(255, 72, 0)">:<br />
+                      GATE<br />
+                    </span>BIRD</p>
                 </div>
               </th>
               <td>
@@ -100,7 +105,7 @@
           </tbody>
         </table>
       </div>
-      
+
       <div class="about__majors">
         <div class="major">
           <div class="major__description">
@@ -133,10 +138,22 @@
           </button>
         </div>
         <div class="work__projects">
-          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
-            <img src="" alt="" class="project__img">
+          <a href="https://lillo.co.kr" class="project of-h" target="blank" data-type="front-end-project">
+
+            <div class="lillo-project-order project-info-pc-size lillo-item1">
+              <img src="imgs/projects/lillo-console2.jpeg" alt="" class="project__img">
+            </div>
+            <div class="lillo-project-order project-info-pc-size lillo-item2">
+              <img src="imgs/projects/lillo-console.jpeg" alt="" class="project__img">
+            </div>
+            <div class="lillo-project-order project-info-mo-size lillo-item3">
+              <img src="imgs/projects/lillo-2.png" alt="" class="project__img">
+            </div>
+            <div class="lillo-project-order project-info-mo-size lillo-item4">
+              <img src="imgs/projects/lillo-1.png" alt="" class="project__img">
+            </div>
             <div class="project__description">
-              <h3>런칭전 공개 불가</h3>
+              <h3>릴로</h3>
               <span>릴로코퍼레이션 자사서비스</span>
               <span>ReactJS,NextJS,JavaScript,typescript</span>
             </div>
@@ -144,20 +161,21 @@
           <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
             <img src="" alt="" class="project__img">
             <div class="project__description">
-              <h3>런칭전 공개 불가</h3>
+              <h3>웨비나 프로젝트(런칭전)</h3>
               <span>SI - 1차개발 참여</span>
               <span>ReactJS, swiperJS,react-youtube 등 다수 라이브러리 활용</span>
             </div>
           </a>
-          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+          <a href="https://lillo.co.kr" class="project" target="blank" data-type="front-end-project">
             <img src="imgs/projects/lillo-play.png" alt="" class="project__img">
             <div class="project__description">
               <h3>릴로 플레이 - 자사서비스 소개페이지</h3>
-              <span>데이터바인딩작업(퍼블리싱 파일 리액트 적용)</span>
+              <span>데이터바인딩작업</span>
+              <span>(퍼블리싱 파일 리액트 적용)</span>
               <span>ReactJS</span>
             </div>
           </a>
-          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+          <a href="https://www.kbds.co.kr/people" class="project" target="blank" data-type="front-end-project">
             <img src="imgs/projects/kbds.png" alt="" class="project__img">
             <div class="project__description">
               <h3>kbds - people 페이지</h3>
@@ -165,7 +183,7 @@
               <span>ReactJS</span>
             </div>
           </a>
-          <a href="https://청약365.com" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
+          <a href="https://청약365.com" class="project" target="blank" data-type="front-end-project">
             <img src="imgs/projects/cheongyak365.png" alt="" class="project__img">
             <div class="project__description">
               <h3>청약정보 및 커뮤니티 사이트</h3>
@@ -199,96 +217,96 @@
           </a>
         </div>
       </div>
-      </div>
+    </div>
   </section>
   <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          스킬설명
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        스킬설명
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>70%</span>
             </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JavaScript</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 80%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>ReactJS</span>
-                <span>80%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 80%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>NodeJS</span>
-                <span>30%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 30%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Axios</span>
-                <span>50%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 50%;"></div>
-              </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
             </div>
           </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-              </ul>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>70%</span>
             </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git : CLI, GUI - FORK</span></li>
-                <li><span>Typescript</span></li>
-                <li><span>ReactJS + NextJS</span></li>
-                <li><span>Styled Component</span></li>
-              </ul>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%;"></div>
             </div>
           </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>ReactJS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>NodeJS</span>
+              <span>30%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>Axios</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git : CLI, GUI - FORK</span></li>
+              <li><span>Typescript</span></li>
+              <li><span>ReactJS + NextJS</span></li>
+              <li><span>Styled Component</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
   <!-- Portfolio -->
-  <section id="Portfolio" class="section">
+  <!-- <section id="Portfolio" class="section">
     <h1>Personal Portfolio</h1>
     <div class="job">
       <table>
@@ -305,27 +323,27 @@
         </tbody>
       </table>
     </div>
-  </section>
+  </section> -->
   <!-- Education & Experience -->
-    <section id="Experience" class="section section__container">
-      <h1>Education & Experience</h1>
-      <div class="job">
-        <table>
-          <tbody>
-            <tr>
-              <th>
-                <img src="imgs/university/kosmo.jpg" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag edu">Education</span>
-                <br>
-                2020.12 / 7개월과정 수료
-                <br>
-                Java 개발자 양성과정 (RPA활용빅데이터)
-                <br>JAVA, PYTHON, RPA, ORACLE 등 교육
-              </td>
-            </tr>
-            <!-- <tr>
+  <section id="Experience" class="section section__container">
+    <h1>Education & Experience</h1>
+    <div class="job">
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <img src="imgs/university/kosmo.jpg" class="experience__logo">
+            </th>
+            <td>
+              <span class="category__tag edu">Education</span>
+              <br>
+              2020.12 / 7개월과정 수료
+              <br>
+              Java 개발자 양성과정 (RPA활용빅데이터)
+              <br>JAVA, PYTHON, RPA, ORACLE 등 교육
+            </td>
+          </tr>
+          <!-- <tr>
               <th>
                 <img src="imgs/jobs/bioden.jpg" class="experience__logo">
               </th>
@@ -337,81 +355,82 @@
                 경영관리 / 계약직
               </td>
             </tr> -->
-            <tr>
-              <th>
-                <img src="imgs/jobs/twoisys.jpg" class="experience__logo">
-                <br>
-              </th>
-              <td>
-                <span class="category__tag exp">work</span>
-                <br>
-                2017.08 ~ 2019.06
-                <br>
-                경영관리 / 정규직
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="imgs/jobs/tsviewtech.png" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag exp">work</span>
-                <br>
-                2017.01 ~ 2017.07
-                <br>
-                경영관리 / 정규직
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="imgs/jobs/withmed.png" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag exp">work</span>
-                <br>
-                2013.06 ~ 2015.11
-                <br>
-                관리부 / 정규직
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="imgs/university/kangnam_university.png" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag edu">Education</span>
-                <br>
-                2013.02 / (편입)학사졸업
-                <br>
-                중국어문화학과
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="imgs/university/jangan_university.jpg" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag edu">Education</span>
-                <br>
-                2011.02 / 전문학사졸업
-                <br>
-                세무회계학과
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+          <tr>
+            <th>
+              <img src="imgs/jobs/twoisys.jpg" class="experience__logo">
+              <br>
+            </th>
+            <td>
+              <span class="category__tag exp">work</span>
+              <br>
+              2017.08 ~ 2019.06
+              <br>
+              경영관리 / 정규직
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img src="imgs/jobs/tsviewtech.png" class="experience__logo">
+            </th>
+            <td>
+              <span class="category__tag exp">work</span>
+              <br>
+              2017.01 ~ 2017.07
+              <br>
+              경영관리 / 정규직
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img src="imgs/jobs/withmed.png" class="experience__logo">
+            </th>
+            <td>
+              <span class="category__tag exp">work</span>
+              <br>
+              2013.06 ~ 2015.11
+              <br>
+              관리부 / 정규직
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img src="imgs/university/kangnam_university.png" class="experience__logo">
+            </th>
+            <td>
+              <span class="category__tag edu">Education</span>
+              <br>
+              2013.02 / (편입)학사졸업
+              <br>
+              중국어문화학과
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <img src="imgs/university/jangan_university.jpg" class="experience__logo">
+            </th>
+            <td>
+              <span class="category__tag edu">Education</span>
+              <br>
+              2011.02 / 전문학사졸업
+              <br>
+              세무회계학과
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
 
-    <!-- Contact -->
-    <section id="contact" class="section about__jobs">
-      <h1 class="contact__title">Contact</h1>
-      <h2 class="contact__email">amie0kim@gmail.com</h2>
-      <p class="contact__rights">
-        2022 Amie - All rights reserved
-      </p>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="section about__jobs">
+    <h1 class="contact__title">Contact</h1>
+    <h2 class="contact__email">amie0kim@gmail.com</h2>
+    <p class="contact__rights">
+      2022 Amie - All rights reserved
+    </p>
+  </section>
 
 </body>
+
 </html>

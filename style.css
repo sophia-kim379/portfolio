@@ -43,6 +43,9 @@
 }
 
 body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+
   margin: 0;
 }
 
@@ -158,7 +161,7 @@ td {
 
 /* Home */
 #home {
-  background: url('imgs/home-background.png') center/cover no-repeat;
+  background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -308,7 +311,7 @@ td {
   align-self: center;
 }
 
-.project__description {
+.project .project__description {
   position: absolute;
   background-color: black;
   display: flex;
@@ -324,8 +327,16 @@ td {
 }
 
 .project:hover .project__description {
+  cursor: pointer;
   opacity: 0.8;
   transform: translateY(0px);
+}
+
+.product-page > button {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--color-orange);
 }
 
 .project__description h3 {
@@ -334,6 +345,10 @@ td {
 
 .project__skill {
   color: var(--color-light-green);
+}
+
+.project__desc {
+  opacity: 0;
 }
 
 .no_move {
@@ -450,6 +465,48 @@ td {
 .lillo-item4 {
   right: 10%;
   top: 60px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-overlay.active {
+  display: block;
+}
+
+.modal-overlay > .modal-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.modal-overlay .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  border-radius: 3px;
+  min-height: 60vh;
+  width: 80vw;
+  padding-top: 20px;
+
+  text-align: center;
+}
+.modal-overlay .content > a {
+  flex-grow: 0;
+}
+.modal-overlay .content > .project__description {
+  display: flex;
+  flex-direction: column;
 }
 
 /* For below 768px screen width */

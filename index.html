@@ -26,10 +26,11 @@
     <ul class="navbar__menu">
       <li class="navbar__menu__item" data-link="#home">Home</li>
       <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#project">Project experience</li>
       <li class="navbar__menu__item" data-link="#work">Work experience</li>
       <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#Portfolio">Personal Portfolio</li>
-      <li class="navbar__menu__item" data-link="#Experience">Education&Experience</li>
+      <!-- <li class="navbar__menu__item" data-link="#Portfolio">Personal Portfolio</li> -->
+      <li class="navbar__menu__item" data-link="#Education">Education</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
     <!-- Toggle button -->
@@ -52,172 +53,228 @@
     <h1>About me</h1>
     <p style="text-align: left;">
       안녕하세요. 주니어 웹 프론트엔드 개발자 입니다.<br />
-      개발자로 전직하기 전 인사 회계 재고관리 일을 했고 개발자로 직종을 변경하여 약 2년 정도 프론트엔드 웹 개발자로 웹 서비스를 개발하는 일을 하였습니다.<br />
+      개발자로 전직하기 전 인사 회계 재고관리 일을 5년 정도 했고 개발자로 직종을 변경하여 약 2년 정도 프론트엔드 웹 개발자로 웹 서비스를 개발하는 일을 하였습니다.<br />
       프론트엔드 팀에서 주로 디자인 팀에서 받은 Zeplin,figma 툴을 통해 HTML, CSS, ReactJS와 Javascript로 화면을 구성하고 axios를 통해 백엔드에서 보내준 데이터를 받아 기능
       구현을 하였습니다. 형상관리는 GUI(FORK) 혹은 CLI를 이용했습니다.<br />
       경영관리 업무는 직원들과 소통이 필수였습니다. 예전 경험을 살려 프론트엔드 개발자로서 백엔드, 디자이너, PM팀과 적극적으로 문제, 해결방안을 공유했고 차후 발생할 수 있는 에러, 예외 그리고 일정을
       고민하여 더 좋은 효율을 낼 수 있도록 개선하였습니다.<br />
     </p>
   </section>
-  <!-- Work experience -->
-  <section id="work" class="section about__jobs">
-    <div>
-      <h1>work experience</h1>
-      <div class="job">
-        <table>
-          <tbody>
-            <tr>
-              <th>
-                <p style="text-align: left;">
-                  Lillo<br />
-                  <span style="color:rgb(255, 72, 0)">Corporation</span>
-                </p>
-              </th>
-              <td>
-                <div class="job__description">
-                  <p class="job__period">2022.12 ~ 2023.7</p>
-                  <p class="job__name">
-                    Lillo서비스팀/팀원
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <div style="text-align: left;">
-                  <p>FRI<span style="color:rgb(255, 72, 0)">:<br />
-                      GATE<br />
-                    </span>BIRD</p>
-                </div>
-              </th>
-              <td>
-                <div class="job__description">
-                  <p class="job__period">2021.03 ~ 2022.06</p>
-                  <p class="job__name">
-                    SI팀/팀원
-                  </p>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__description">
-            <div class="major__icon">
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div class="major__icon">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div class="major__icon">
-              <i class="fa-brands fa-js"></i>
-            </div>
-            <div class="major__icon">
-              <i class="fa-brands fa-react"></i>
-            </div>
+  <!-- project -->
+  <section id="project" class="section about__jobs">
+    <div class="section__container">
+      <h1>Projects experience</h1>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">10</span>
+        </button>
+        <button class="category__btn" data-filter="front-end-project">
+          Work - Front end <span class="category__count">7</span>
+        </button>
+        <button class="category__btn" data-filter="back-end-project">
+          Work - Back end <span class="category__count">1</span>
+        </button>
+        <button class="category__btn" data-filter="personal-project">
+          개인 프로젝트 <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a class="project of-h" target="blank" data-type="front-end-project" onclick="return false">
+          <div class="lillo-project-order project-info-pc-size lillo-item1">
+            <img src="imgs/projects/lillo-console2.jpeg" alt="" class="project__img">
           </div>
-        </div>
-      </div>
-      <div class="section__container">
-        <h2>Projects</h2>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">8</span>
-          </button>
-          <button class="category__btn" data-filter="front-end-project">
-            Front end <span class="category__count">7</span>
-          </button>
-          <button class="category__btn" data-filter="back-end-project">
-            Back end <span class="category__count">1</span>
-          </button>
-        </div>
-        <div class="work__projects">
-          <a href="https://lillo.co.kr" class="project of-h" target="blank" data-type="front-end-project">
-
-            <div class="lillo-project-order project-info-pc-size lillo-item1">
-              <img src="imgs/projects/lillo-console2.jpeg" alt="" class="project__img">
-            </div>
-            <div class="lillo-project-order project-info-pc-size lillo-item2">
-              <img src="imgs/projects/lillo-console.jpeg" alt="" class="project__img">
-            </div>
-            <div class="lillo-project-order project-info-mo-size lillo-item3">
-              <img src="imgs/projects/lillo-1.png" alt="" class="project__img">
-            </div>
-            <div class="lillo-project-order project-info-mo-size lillo-item4">
-              <img src="imgs/projects/lillo-2.png" alt="" class="project__img">
-            </div>
-            <div class="project__description">
-              <h3>릴로</h3>
-              <span>릴로코퍼레이션 자사서비스</span>
-              <span>ReactJS,NextJS,JavaScript,typescript</span>
-            </div>
-          </a>
-          <a href="" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
-            <img src="" alt="" class="project__img">
-            <div class="project__description">
-              <h3>웨비나 프로젝트(런칭전)</h3>
-              <span>SI - 1차개발 참여</span>
-              <span>ReactJS, swiperJS,react-youtube 등 다수 라이브러리 활용</span>
-            </div>
-          </a>
-          <a href="https://lillo.co.kr" class="project" target="blank" data-type="front-end-project">
-            <img src="imgs/projects/lillo-play.png" alt="" class="project__img">
-            <div class="project__description">
-              <h3>릴로 플레이 - 자사서비스 소개페이지</h3>
-              <span>데이터바인딩작업</span>
-              <span>(퍼블리싱 파일 리액트 적용)</span>
-              <span>ReactJS</span>
-            </div>
-          </a>
-          <a href="https://www.kbds.co.kr/people" class="project" target="blank" data-type="front-end-project">
-            <img src="imgs/projects/kbds.png" alt="" class="project__img">
-            <div class="project__description">
-              <h3>kbds - people 페이지</h3>
-              <span>SI - 유지보수</span>
-              <span>ReactJS</span>
-            </div>
-          </a>
-          <a href="https://청약365.com" class="project" target="blank" data-type="front-end-project">
-            <img src="imgs/projects/cheongyak365.png" alt="" class="project__img">
-            <div class="project__description">
-              <h3>청약정보 및 커뮤니티 사이트</h3>
-              <span>사용자,관리자 웹사이트</span>
-              <span>ReactJS, gatsbyJS</span>
-            </div>
-          </a>
-          <a href="#" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
-            <img src="imgs/projects/mimimarket.JPG" alt="" class="project__img">
-            <div class="project__description">
-              <h3>동네상점 주문서비스</h3>
-              <span>관리자 웹사이트</span>
-              <span>ReactJS, NextJS</span>
-            </div>
-          </a>
-          <a href="#" class="project no_move" target="blank" data-type="front-end-project" onclick="return false">
-            <img src="imgs/projects/pesket.JPG" alt="" class="project__img">
-            <div class="project__description">
-              <h3>반려동물 쇼핑몰</h3>
-              <span>상점주,관리자 페이지</span>
-              <span>ReactJS, NextJS</span>
-            </div>
-          </a>
-          <a href="#" class="project no_move" target="blank" data-type="back-end-project" onclick="return false">
-            <img src="imgs/projects/dawn.jpg" alt="" class="project__img">
-            <div class="project__description">
-              <h3>동틀녘</h3>
-              <span>기상알림 앱</span>
-              <span>NodeJS, ExpressJS</span>
-            </div>
-          </a>
-        </div>
+          <div class="lillo-project-order project-info-pc-size lillo-item2">
+            <img src="imgs/projects/lillo-console.jpeg" alt="" class="project__img">
+          </div>
+          <div class="lillo-project-order project-info-mo-size lillo-item3">
+            <img src="imgs/projects/lillo-1.png" alt="" class="project__img">
+          </div>
+          <div class="lillo-project-order project-info-mo-size lillo-item4">
+            <img src="imgs/projects/lillo-2.png" alt="" class="project__img">
+          </div>
+          <div class="project__description" data-project="lillo">
+            <h3>릴로</h3>
+            <span>릴로코퍼레이션 자사서비스</span>
+            <span>ReactJS,NextJS,JavaScript,typescript</span>
+            <span class="product-page">
+              <button onclick="window.open('https://lillo.co.kr')" target="_blank">릴로 홈페이지</button>
+            </span>
+          </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="front-end-project" onclick="return false">
+         <h3>웨비나 프로젝트(런칭전)</h3>
+          <div class="project__description" data-project="webina">
+            <h3>웨비나 프로젝트(런칭전)</h3>
+            <span>SI - 1차개발 참여</span>
+            <span>ReactJS, swiperJS,react-youtube 등 다수 라이브러리 활용</span>
+          </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="front-end-project" onclick="return false">
+          <img src="imgs/projects/lillo-play.png" alt="" class="project__img">
+          <div class="project__description" data-project="lillo-play">
+            <h3>릴로 플레이 - 자사서비스 소개페이지</h3>
+            <span>데이터바인딩작업</span>
+            <span>(퍼블리싱 파일 리액트 적용)</span>
+            <span>ReactJS</span>
+          </div>
+        </a>
+        <a href="https://www.kbds.co.kr/people" class="project" target="blank" data-type="front-end-project" onclick="return false">
+          <img src="imgs/projects/kbds.png" alt="" class="project__img">
+          <div class="project__description" data-project="kbds">
+            <h3>kbds - people 페이지</h3>
+            <span>SI - 유지보수</span>
+            <span>ReactJS</span>
+            <span class="product-page">
+              <button onclick="window.open('https://www.kbds.co.kr/people')" target="_blank">KDBS 사이트</button>
+            </span>
+          </div>
+        </a>
+        <a href="https://청약365.com" class="project" target="blank" data-type="front-end-project">
+          <img src="imgs/projects/cheongyak365.png" alt="" class="project__img">
+          <div class="project__description" data-project="cy">
+            <h3>청약정보 및 커뮤니티 사이트</h3>
+            <span>사용자,관리자 웹사이트 1차 개발 참여</span>
+            <span>ReactJS, gatsbyJS</span>
+            <span class="product-page">
+              <button onclick="window.open('https://청약365.com')" target="_blank">청약 정보 사이트</button>
+            </span>
+          </div>
+        </a>
+        <a href="#" class="project" target="blank" data-type="front-end-project" onclick="return false" onclick="return false">
+          <img src="imgs/projects/mimimarket.JPG" alt="" class="project__img">
+          <div class="project__description" data-project="dong">
+            <h3>동네상점 주문서비스</h3>
+            <span>관리자 웹사이트</span>
+            <span>ReactJS, NextJS</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="blank" data-type="front-end-project" onclick="return false">
+          <img src="imgs/projects/pesket.JPG" alt="" class="project__img">
+          <div class="project__description" data-project="pesket">
+            <h3>반려동물 쇼핑몰</h3>
+            <span>상점주,관리자 페이지</span>
+            <span>ReactJS, NextJS</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="blank" data-type="back-end-project" onclick="return false">
+          <img src="imgs/projects/dawn.jpg" alt="" class="project__img">
+          <div class="project__description" data-project="alarm">
+            <h3>동틀녘</h3>
+            <span>기상알림 앱</span>
+            <span>NodeJS, ExpressJS</span>
+          </div>
+        </a>
+        <a href="#" class="project of-h" target="blank" data-type="personal-project" onclick="return false" onclick="return false">
+          <img src="imgs/projects/simple-youtube-1.png" alt="simple playlist" class="project__img">
+          <div class="lillo-project-order project-info-pc-size lillo-item2">
+            <img src="imgs/projects/simple-youtube-2.png" alt="simple playlist" class="project__img">
+          </div>
+            
+          <div class="project__description" data-project="resume">
+            <h3>개인 포트폴리오 페이지(심플 유튜브 플레이리스트)</h3>
+            <span>JavaScript, HTML, CSS</span>
+            <span class="product-page">
+              <button onclick="window.open('https://simple-my-playlist.netlify.app')" target="_blank">심플 유튜브 플레이리스트</button>
+            </span>
+          </div>
+        </a>
+        <a href="#" class="project" target="blank" data-type="personal-project" onclick="return false" onclick="return false">
+          <img src="" alt="">
+          <h3>개인 포트폴리오 페이지(현재 페이지)</h3>
+          <div class="project__description" data-project="resume">
+            <h3>개인 포트폴리오 페이지(현재 페이지)</h3>
+            <span>JavaScript, HTML, CSS</span>
+            <span class="product-page">
+              <button onclick="window.open('https://amiekim.github.io/portfolio')" target="_blank">개인 이력서 페이지</button>
+            </span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
+    <!-- Work experience -->
+    <section id="work" class="section">
+      <div>
+        <h1>work experience</h1>
+        <div class="job">
+          <table>
+            <tbody>
+              <tr>
+                <th>
+                  <p style="text-align: left;">
+                    스타트업 게임개발 회사
+                  </p>
+                </th>
+                <td>
+                  <div class="job__description">
+                    <p class="job__period">2024.01 ~ 재직중</p>
+                    <p class="job__name">
+                      프론트엔드/팀원
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p style="text-align: left;">
+                    Lillo<br />
+                    <span style="color:rgb(255, 72, 0)">Corporation</span>
+                  </p>
+                </th>
+                <td>
+                  <div class="job__description">
+                    <p class="job__period">2022.12 ~ 2023.7</p>
+                    <p class="job__name">
+                      Lillo서비스팀/팀원
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <div style="text-align: left;">
+                    <p>FRI<span style="color:rgb(255, 72, 0)">:<br />
+                        GATE<br />
+                      </span>BIRD</p>
+                  </div>
+                </th>
+                <td>
+                  <div class="job__description">
+                    <p class="job__period">2021.03 ~ 2022.06</p>
+                    <p class="job__name">
+                      SI팀/팀원
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__description">
+              <div class="major__icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="major__icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="major__icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="major__icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
   <!-- Skills -->
-  <section id="skills" class="section">
+  <section id="skills" class="section about__jobs">
     <div class="section__container">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
@@ -321,9 +378,9 @@
       </table>
     </div>
   </section> -->
-  <!-- Education & Experience -->
-  <section id="Experience" class="section section__container">
-    <h1>Education & Experience</h1>
+  <!-- Education -->
+  <section id="Education" class="section section__container">
+    <h1>Education</h1>
     <div class="job">
       <table>
         <tbody>
@@ -336,57 +393,8 @@
               <br>
               2020.12 / 7개월과정 수료
               <br>
-              Java 개발자 양성과정 (RPA활용빅데이터)
+              JAVA 개발자 양성과정 (RPA활용빅데이터)
               <br>JAVA, PYTHON, RPA, ORACLE 등 교육
-            </td>
-          </tr>
-          <!-- <tr>
-              <th>
-                <img src="imgs/jobs/bioden.jpg" class="experience__logo">
-              </th>
-              <td>
-                <span class="category__tag exp">work</span>
-                <br>
-                2019.11 ~ 2020.02
-                <br>
-                경영관리 / 계약직
-              </td>
-            </tr> -->
-          <tr>
-            <th>
-              <img src="imgs/jobs/twoisys.jpg" class="experience__logo">
-              <br>
-            </th>
-            <td>
-              <span class="category__tag exp">work</span>
-              <br>
-              2017.08 ~ 2019.06
-              <br>
-              경영관리 / 정규직
-            </td>
-          </tr>
-          <tr>
-            <th>
-              <img src="imgs/jobs/tsviewtech.png" class="experience__logo">
-            </th>
-            <td>
-              <span class="category__tag exp">work</span>
-              <br>
-              2017.01 ~ 2017.07
-              <br>
-              경영관리 / 정규직
-            </td>
-          </tr>
-          <tr>
-            <th>
-              <img src="imgs/jobs/withmed.png" class="experience__logo">
-            </th>
-            <td>
-              <span class="category__tag exp">work</span>
-              <br>
-              2013.06 ~ 2015.11
-              <br>
-              관리부 / 정규직
             </td>
           </tr>
           <tr>
@@ -427,7 +435,10 @@
       2022 Amie - All rights reserved
     </p>
   </section>
-
+  <div class="modal-overlay">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="content"></div>
+  </div>
+  </div>
 </body>
-
 </html>

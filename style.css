@@ -71,10 +71,11 @@ button {
 }
 
 /* Typography */
+
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-moss-green);
   margin: 16px 0px;
 }
 
@@ -194,9 +195,9 @@ td {
 
 /* Section common */
 .section {
-  padding: 50px;
+  padding: 70px 50px;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .section__container {
@@ -508,6 +509,27 @@ td {
   display: flex;
   flex-direction: column;
 }
+.contact__email {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+}
+.contact__email > div {
+  position: absolute;
+  top: 0;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__email > div > a {
+  color: #000;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+/* .contact__email:hover > div {
+  color: #2f86a6;
+  transform: translateX(-100px);
+} */
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
